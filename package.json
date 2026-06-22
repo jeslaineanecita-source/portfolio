@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "live-server",
-    "build": "echo \"Portfolio built successfully\"",
+    "build": "echo 'No build step required'",
     "lint": "echo \"No linting configured\"",
     "test": "echo \"No tests configured\"",
     "predeploy": "npm run build"
