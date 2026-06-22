@@ -1,10 +1,10 @@
 # Portfolio Project Configuration
 
-This file contains project configuration for the professional portfolio web application.
+This file contains project configuration for the Jeslaine Anecita professional portfolio web application.
 
 ## Project Overview
 
-A responsive web-based professional portfolio showcasing skills, projects, experience, and contact information.
+A responsive web-based professional portfolio showcasing skills, projects, experience, and contact information for Jeslaine Anecita, a third-year ICT student at Iloilo State University of Fisheries Science and Technology.
 
 ## Development Setup
 
@@ -38,18 +38,20 @@ This will prepare the portfolio for deployment
 
 ## Project Structure
 
-- `index.html` - Main portfolio page with all sections
-- `styles.css` - CSS styling with responsive design
+- `index.html` - Main portfolio page
+- `styles.css` - CSS styling with dark theme and animations
 - `script.js` - JavaScript for interactivity
 - `package.json` - Project configuration and scripts
 
 ## Features
 
 - Responsive design for desktop, tablet, and mobile devices
-- Smooth navigation between sections
-- Interactive hover effects and animations
-- Contact form with client-side validation
+- Dark theme with gradient accents
+- Smooth navigation and animations
+- Interactive hover effects
+- Contact form with validation
 - Social media integration
+- Professional visual hierarchy
 
 ## Technologies Used
 
@@ -57,6 +59,8 @@ This will prepare the portfolio for deployment
 - CSS3 for styling (including animations and responsive design)
 - JavaScript for interactivity
 - Live Server for local development
+- Font Awesome for icons
+- Google Fonts for typography
 
 ## License
 
@@ -64,7 +68,7 @@ MIT License - See LICENSE file for details
 
 ## Credits
 
-This portfolio was created with assistance from AI coding agents following responsible AI practices. Every model output is reviewed by a human before being merged.
+This portfolio was created with assistance from AI coding agents following responsible AI practices. It showcases the technical skills and design capabilities of Jeslaine Anecita as an emerging ICT professional.
 
 ## AI Agents Used
 

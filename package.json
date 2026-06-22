@@ -1,7 +1,7 @@
 {
   "name": "professional-portfolio",
-  "version": "1.0.0",
-  "description": "A basic web-based professional portfolio with About, Skills, Projects, Experience, and Contact sections",
+  "version": "2.0.0",
+  "description": "A professional portfolio website for Jeslaine Anecita, showcasing skills, projects, and experience as a third-year ICT student at Iloilo State University of Fisheries Science and Technology.",
   "main": "index.html",
   "scripts": {
     "dev": "live-server",
@@ -14,18 +14,21 @@
     "portfolio",
     "web-development",
     "responsive-design",
-    "professional"
+    "professional",
+    "ict",
+    "student",
+    "isufst"
   ],
-  "author": "Professional Developer",
+  "author": "Jeslaine Anecita",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/professional-portfolio.git"
+    "url": "https://github.com/jeslaineanecita/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/username/professional-portfolio/issues"
+    "url": "https://github.com/jeslaineanecita/portfolio/issues"
   },
-  "homepage": "https://username.github.io/professional-portfolio",
+  "homepage": "https://jeslaineanecita.github.io/portfolio",
   "devDependencies": {
     "live-server": "^1.2.1"
   },
@@ -38,6 +41,11 @@
     "not dead"
   ],
   "contributors": [
+    {
+      "name": "Jeslaine Anecita",
+      "role": "Portfolio Developer",
+      "email": "jeslaine.anecita@email.com"
+    },
     {
       "name": "AI Assistant",
       "role": "Developer",

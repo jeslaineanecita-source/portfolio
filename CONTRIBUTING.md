@@ -1,16 +1,16 @@
 # Portfolio Contribution Guide
 
-This document outlines the contribution guidelines for the professional portfolio project.
+This document outlines the contribution guidelines for the Jeslaine Anecita portfolio project.
 
 ## Welcome!
 
-Thank you for your interest in contributing to this portfolio project. This project was created with the help of AI coding agents and follows responsible AI practices.
+Thank you for your interest in contributing to this portfolio project. This project was created to showcase the technical skills and professional presentation of Jeslaine Anecita as an emerging ICT professional.
 
 ## Contributing
 
 ### Before You Start
 
-1. **Review the AGENTS.md file** in the parent directory to understand the responsible AI rules and guidelines
+1. **Review the AGENTS.md file** to understand the responsible AI rules and guidelines
 2. **Read this CONTRIBUTING.md file** for specific project guidelines
 3. **Fork the repository** and create a new branch for your changes
 
@@ -55,21 +55,22 @@ Thank you for your interest in contributing to this portfolio project. This proj
 ### Main Files
 
 - `index.html` - Main portfolio page
-- `styles.css` - CSS styling
+- `styles.css` - CSS styling with dark theme
 - `script.js` - JavaScript functionality
 - `package.json` - Project configuration
 
 ### Key Sections
 
-1. **About Me** - Personal introduction
-2. **Skills** - Technical and professional skills
-3. **Projects** - Showcase of notable projects
-4. **Experience** - Work history and career progression
-5. **Contact** - Contact form and social links
+1. **Hero Section**: Introduction with name and professional title
+2. **About Me**: Personal background and education
+3. **Technical Skills**: Comprehensive skill assessment
+4. **Featured Projects**: Showcase of notable projects
+5. **Academic Journey**: Timeline of educational experience
+6. **Contact**: Contact form and social media links
 
 ## Responsible AI Practices
 
-This project was created with AI assistance. Please:
+This portfolio was created with AI assistance. Please:
 
 - Review all AI-generated code before committing
 - Ensure no personal data or credentials are included
@@ -90,3 +91,4 @@ This project was created with the help of:
 - AI coding agents
 - Open source libraries and frameworks
 - The open source community
+- Jeslaine Anecita for providing content and feedback
