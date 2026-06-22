@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeslaine Anecita | ICT Student Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav-container">
@@ -32,6 +36,7 @@
 
     <main>
         <section id="home" class="hero-section">
+            <canvas id="hero-canvas"></canvas>
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">Hello, I'm <span class="highlight">Jeslaine</span></h1>
@@ -48,7 +53,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="https://via.placeholder.com/400x400" alt="Jeslaine Anecita" class="profile-image">
+                        <img src="profile.jpg" alt="Jeslaine Anecita" class="profile-image">
                         <div class="image-decoration"></div>
                         <div class="floating-elements">
                             <div class="float-element html">HTML</div>
@@ -73,11 +78,16 @@
                 <div class="about-text">
                     <h3>Who I Am</h3>
                     <p>
-                        I'm Jeslaine Anecita, a dedicated third-year ICT student at Iloilo State University of Fisheries Science and Technology.
-                        My journey in technology started with a curiosity for how digital systems work, and it has evolved into a passion for creating meaningful solutions through code and design.
+                        I'm Jeslaine Anecita, a dedicated third-year ICT student at Iloilo State University of Fisheries
+                        Science and Technology.
+                        My journey in technology started with a curiosity for how digital systems work, and it has
+                        evolved into a passion for creating meaningful solutions through code and design.
                     </p>
                     <p>
-                        I believe in the power of technology to transform ideas into reality. My academic background in Information Communications Technology has equipped me with strong foundations in programming, web development, and digital innovation. I'm constantly learning and exploring new technologies to enhance my skills.
+                        I believe in the power of technology to transform ideas into reality. My academic background in
+                        Information Communications Technology has equipped me with strong foundations in programming,
+                        web development, and digital innovation. I'm constantly learning and exploring new technologies
+                        to enhance my skills.
                     </p>
                     <div class="personal-details">
                         <div class="detail-item">
@@ -100,7 +110,7 @@
                 </div>
                 <div class="about-image">
                     <div class="image-frame">
-                        <img src="https://via.placeholder.com/500x600" alt="About Jeslaine">
+                        <img src="profile.jpg" alt="About Jeslaine">
                     </div>
                 </div>
             </div>
@@ -349,7 +359,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Insight Analytics</h3>
                         <p class="project-description">
-                            Interactive data visualization dashboard for business analytics with real-time data processing,
+                            Interactive data visualization dashboard for business analytics with real-time data
+                            processing,
                             customizable reports, and predictive insights.
                         </p>
                         <div class="project-tags">
@@ -407,7 +418,8 @@
                         <div class="timeline-content">
                             <div class="timeline-date">2024 - Present</div>
                             <h3 class="timeline-title">Third Year ICT Student</h3>
-                            <h4 class="timeline-subtitle">Iloilo State University of Fisheries Science and Technology</h4>
+                            <h4 class="timeline-subtitle">Iloilo State University of Fisheries Science and Technology
+                            </h4>
                             <p class="timeline-description">
                                 Currently in my third year of ICT studies, focusing on advanced web development,
                                 software engineering, and database systems. Active member of the university's
@@ -536,11 +548,13 @@
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject of your message"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                            <textarea id="message" name="message" placeholder="Write your message here..."
+                                required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">
                             <span>Send Message</span>
@@ -571,4 +585,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

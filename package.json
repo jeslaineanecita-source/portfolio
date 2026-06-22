@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeslaineanecita/portfolio.git"
+    "url": "https://github.com/jeslaineanecita-source/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/jeslaineanecita/portfolio/issues"
+    "url": "https://github.com/jeslaineanecita-source/portfolio/issues"
   },
-  "homepage": "https://jeslaineanecita.github.io/portfolio",
+  "homepage": "https://jeslaineanecita-source.github.io/portfolio",
   "devDependencies": {
     "live-server": "^1.2.1"
   },
