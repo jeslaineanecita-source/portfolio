@@ -3,143 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Jeslaine Anecita - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Portfolio</div>
+    <header class="dark-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Jeslaine</span>
+                <span class="logo-accent">Anecita</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-            <p>I am a professional with extensive experience in web development and design. I create elegant solutions to complex problems and am passionate about delivering high-quality work.</p>
+    <section id="about" class="section about-section">
+        <div class="about-container">
+            <div class="profile-wrapper">
+                <div class="profile-image-container">
+                    <img src="https://via.placeholder.com/250" alt="Jeslaine Anecita Profile Picture" class="profile-img">
+                    <div class="profile-border"></div>
+                </div>
+                <div class="profile-decoration">
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h1 class="welcome-text">Welcome to my portfolio</h1>
+                <h2 class="name-main">Jeslaine Anecita</h2>
+                <div class="education-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Bachelor of Science in Information Communications Technology</span>
+                </div>
+                <div class="university-badge">
+                    <i class="fas fa-university"></i>
+                    <span>Iloilo State University of Fisheries Science and Technology</span>
+                </div>
+                <div class="year-badge">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Third-Year Student</span>
+                </div>
+                <p class="bio-text">
+                    Passionate about creating elegant solutions through code and design. As an incoming third-year ICT student at ISUFST, I'm developing expertise in web development, software engineering, and digital innovation. Eager to learn, collaborate, and build impactful technology solutions that make a difference.
+                </p>
+                <div class="social-links-large">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
+    <section id="skills" class="section skills-section">
+        <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-underline"></div>
+        </div>
         <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            <div class="skill-card" data-skill="frontend">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="skill-title">Frontend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">TypeScript</span>
+                </div>
+                <p class="skill-description">Building responsive and interactive user interfaces with modern web technologies.</p>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Design</h3>
-                <p>UI/UX Design, Figma, Adobe Creative Suite</p>
+            <div class="skill-card" data-skill="backend">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="skill-title">Backend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+                <p class="skill-description">Developing robust server-side applications and database solutions.</p>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>Backend</h3>
-                <p>Python, Java, SQL, AWS</p>
+            <div class="skill-card" data-skill="design">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="skill-title">UI/UX Design</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">Sketch</span>
+                    <span class="skill-tag">Prototyping</span>
+                </div>
+                <p class="skill-description">Creating user-centered designs with focus on usability and aesthetics.</p>
             </div>
-            <div class="skill-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Mobile</h3>
-                <p>React Native, Flutter</p>
+            <div class="skill-card" data-skill="mobile">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="skill-title">Mobile Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Swift</span>
+                    <span class="skill-tag">Kotlin</span>
+                </div>
+                <p class="skill-description">Building cross-platform mobile applications for iOS and Android.</p>
+            </div>
+            <div class="skill-card" data-skill="database">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="skill-title">Database Management</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Redis</span>
+                </div>
+                <p class="skill-description">Designing and optimizing database structures for data integrity.</p>
+            </div>
+            <div class="skill-card" data-skill="tools">
+                <div class="skill-icon-wrapper">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="skill-title">Development Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">CI/CD</span>
+                </div>
+                <p class="skill-description">Version control, containerization, and cloud deployment solutions.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
+    <section id="projects" class="section projects-section">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-underline"></div>
+        </div>
         <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>A web application for managing tasks and productivity.</p>
-                <div class="project-tags">
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
+            <div class="project-card" data-project="1">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/400x250" alt="Task Management App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Project">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">TaskFlow Pro</h3>
+                    <p class="project-description">A comprehensive web application for task management and productivity enhancement with real-time collaboration features.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">Socket.io</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Mobile app for tracking fitness and health goals.</p>
-                <div class="project-tags">
-                    <span>React Native</span>
-                    <span>Firebase</span>
+            <div class="project-card" data-project="2">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/400x250" alt="Fitness Tracker">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Project">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">FitTrack Mobile</h3>
+                    <p class="project-description">Cross-platform mobile application for fitness tracking and health goal monitoring with personalized workout plans.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Redux</span>
+                        <span class="project-tag">HealthKit</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Data visualization dashboard for business analytics.</p>
-                <div class="project-tags">
-                    <span>D3.js</span>
-                    <span>Python</span>
-                    <span>PostgreSQL</span>
+            <div class="project-card" data-project="3">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/400x250" alt="Analytics Dashboard">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Project">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Insight Analytics</h3>
+                    <p class="project-description">Interactive data visualization dashboard for business analytics with real-time data processing and customizable reports.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">D3.js</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-project="4">
+                <div class="project-image-wrapper">
+                    <img src="https://via.placeholder.com/400x250" alt="E-commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View Project">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ShopSphere</h3>
+                    <p class="project-description">Full-stack e-commerce platform with payment integration, inventory management, and customer analytics.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">Stripe</span>
+                        <span class="project-tag">AWS</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section">
-        <h2>Experience</h2>
+    <section id="experience" class="section experience-section">
+        <div class="section-header">
+            <h2 class="section-title">Academic Journey</h2>
+            <div class="section-underline"></div>
+        </div>
         <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2020 - Present</div>
+            <div class="timeline-item" data-year="2024">
+                <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Senior Developer</h3>
-                    <h4>Tech Company Inc.</h4>
-                    <p>Leading development of web applications and mentoring junior developers.</p>
+                    <div class="timeline-date">2024 - Present</div>
+                    <h3 class="timeline-title">Third Year ICT Student</h3>
+                    <h4 class="timeline-subtitle">Iloilo State University of Fisheries Science and Technology</h4>
+                    <p class="timeline-description">Currently pursuing Bachelor of Science in Information Communications Technology. Developing expertise in software development, web technologies, and digital systems.</p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Web Development</span>
+                        <span class="timeline-tag">Software Engineering</span>
+                        <span class="timeline-tag">Database Systems</span>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2017 - 2020</div>
+            <div class="timeline-item" data-year="2022">
+                <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Developer</h3>
-                    <h4>Digital Solutions Ltd.</h4>
-                    <p>Developed and maintained multiple client projects.</p>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3 class="timeline-title">Second Year ICT Student</h3>
+                    <h4 class="timeline-subtitle">ISUFST</h4>
+                    <p class="timeline-description">Advanced coursework in programming fundamentals, data structures, and web application development. Participated in coding bootcamps and hackathons.</p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">JavaScript</span>
+                        <span class="timeline-tag">Python</span>
+                        <span class="timeline-tag">Database Design</span>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2015 - 2017</div>
+            <div class="timeline-item" data-year="2020">
+                <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Junior Developer</h3>
-                    <h4>StartUp XYZ</h4>
-                    <p>Started career in software development.</p>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <h3 class="timeline-title">First Year ICT Student</h3>
+                    <h4 class="timeline-subtitle">ISUFST</h4>
+                    <p class="timeline-description">Foundation year focusing on computer basics, programming introduction, and mathematics for ICT. Developed interest in software development and problem-solving.</p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Programming Fundamentals</span>
+                        <span class="timeline-tag">Computer Literacy</span>
+                        <span class="timeline-tag">Problem Solving</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-underline"></div>
+        </div>
         <div class="contact-container">
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <p><i class="fas fa-envelope"></i> email@example.com</p>
-                <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
-                <p><i class="fas fa-map-marker-alt"></i> City, Country</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="contact-info-section">
+                <h3 class="contact-title">Let's Connect</h3>
+                <p class="contact-description">
+                    I'm always open to new opportunities, collaborations, or just a friendly chat about technology and innovation. Feel free to reach out!
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>jeslaine.anecita@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+63 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Iloilo City, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links-large">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
                 </div>
             </div>
+            <form class="contact-form" id="contactForm">
+                <h3 class="form-title">Send a Message</h3>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
     </section>
 
